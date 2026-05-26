@@ -1,0 +1,21 @@
+一、视觉大模型适配：直接输入语音，输出语音的那种
+接入大模型数据：
+    tongyi_api_key: "sk-1a5bc858f7124f05b2fe5b3649e747df"  # API Key / API密钥
+    tongyi_base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"  # API Endpoint (no modification needed) / 接口地址(无需修改)
+    tongyi_model: "qwen-plus"  # Model to use, e.g., "qwen-vl-max", "qwen-turbo" / 使用的模型，例如 "qwen-vl-max", "qwen-turbo"
+    tongyi_media_model: "flux-schnell"  # Tongyi text-to-image model / 通义千问文生图模型
+
+    完成以下基本功能：
+        1、给大模型提示词和文档数据，能够基于文档内容进行回答问题
+        2、通过物理机器人扫描得到一个区域的地图，能够基于这个地图文件进行导航语音说明，
+            。路径规划机器人自己完成，
+            。当听到客户说想去哪里的时候，如果机器人能够规划出路径，那么就说带她过去，
+            。如果规划路径不对，那么就说我暂时还没学会这个技能，等我学会了再来引导您
+        3、语音沟通要求友好，幽默，而且懂礼节
+        4、语音速度和正常人一样，吐词要清晰
+        5、输入主要是用户语音，也可以通过命令行文字输入
+        6、输出是语音和文字
+        7、输出语音部分主要是和用户进行沟通对话
+        8、输出文字部分不局限于语音文案，也有可能是一些机器人命令，主要是能实现skill里面的功能直接调用
+        9、skill功能调用请参照用例文件：/home/sunrise/code/openArm/src/openarm_skills/scripts/test_openarm_skills.sh
+二、
