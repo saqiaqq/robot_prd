@@ -18,4 +18,17 @@
         7、输出语音部分主要是和用户进行沟通对话
         8、输出文字部分不局限于语音文案，也有可能是一些机器人命令，主要是能实现skill里面的功能直接调用
         9、skill功能调用请参照用例文件：/home/sunrise/code/openArm/src/openarm_skills/scripts/test_openarm_skills.sh
-二、
+        10、四元数设置准则：
+            i.
+二、skill功能优化：
+    1、爪取力度控制：
+        i.添加力度控制功能实现
+        ii.添加抓取的速度控制参数实现
+            
+
+    2、双手端东西能力实现；
+    3、pick_place优化
+        i.路径规划时，末端需要规避目标物体的尺寸区域
+        ii.抓取力度逻辑适配到pick_place逻辑里面来
+        iii.大模型适配
+    4、大模型适配
